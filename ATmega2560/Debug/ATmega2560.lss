@@ -5,9 +5,9 @@ Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
   0 .text         0000007a  00000000  00000000  00000054  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .stab         000000fc  00000000  00000000  000000d0  2**2
+  1 .stab         000005ac  00000000  00000000  000000d0  2**2
                   CONTENTS, READONLY, DEBUGGING
-  2 .stabstr      00000235  00000000  00000000  000001cc  2**0
+  2 .stabstr      000007dc  00000000  00000000  0000067c  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -49,12 +49,6 @@ Disassembly of section .text:
   68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
 
 0000006c <main>:
- *  Created on: ٢٨‏/١٠‏/٢٠٢٤
- *      Author: s
- */
-#include "main.h"
-
-int main(void) {
   6c:	df 93       	push	r29
   6e:	cf 93       	push	r28
   70:	cd b7       	in	r28, 0x3d	; 61

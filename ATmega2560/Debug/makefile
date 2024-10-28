@@ -8,6 +8,8 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include Mcal/Mcal_DIO/subdir.mk
+-include Hal/Hal_Led/subdir.mk
 -include App/subdir.mk
 -include subdir.mk
 -include objects.mk

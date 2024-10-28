@@ -1,15 +1,15 @@
 /*
- * main.h
+ * Hal_Led_init.h
  *
- *  Created on: 28/10/2024
- *      Author: Ziad Mohammed
+ *  Created on: Oct 29, 2024
+ *      Author: Ziad Fathy
  */
 
-#ifndef APP_MAIN_H_
-#define APP_MAIN_H_
+#ifndef HAL_HAL_LED_HAL_LED_INIT_H_
+#define HAL_HAL_LED_HAL_LED_INIT_H_
 
 /* -------------------- Include Start -------------------- */
-#include "../Hal/Hall_dfs.h"
+#include "Hal_Led_cfg.h"
 /* -------------------- Include End  -------------------- */
 
 /* -------------------- Macro Start -------------------- */
@@ -24,4 +24,4 @@
 /* -------------------- API Start -------------------- */
 /* -------------------- API End -------------------- */
 
-#endif /* APP_MAIN_H_ */
+#endif /* HAL_HAL_LED_HAL_LED_INIT_H_ */

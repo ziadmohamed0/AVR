@@ -1,15 +1,16 @@
 /*
- * main.h
+ * Mcal_DIO_priv.h
  *
- *  Created on: 28/10/2024
- *      Author: Ziad Mohammed
+ *  Created on: Oct 29, 2024
+ *      Author: Ziad Fathy
  */
 
-#ifndef APP_MAIN_H_
-#define APP_MAIN_H_
+#ifndef MCAL_MCAL_DIO_MCAL_DIO_PRIV_H_
+#define MCAL_MCAL_DIO_MCAL_DIO_PRIV_H_
 
 /* -------------------- Include Start -------------------- */
-#include "../Hal/Hall_dfs.h"
+#include "../../Lib/Std_Types.h"
+#include "../../Lib/bit_math.h"
 /* -------------------- Include End  -------------------- */
 
 /* -------------------- Macro Start -------------------- */
@@ -24,4 +25,4 @@
 /* -------------------- API Start -------------------- */
 /* -------------------- API End -------------------- */
 
-#endif /* APP_MAIN_H_ */
+#endif /* MCAL_MCAL_DIO_MCAL_DIO_PRIV_H_ */

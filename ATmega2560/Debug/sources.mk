@@ -21,4 +21,6 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 App \
+Hal/Hal_Led \
+Mcal/Mcal_DIO \
 

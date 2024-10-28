@@ -17,6 +17,8 @@ signature        0x00840000         0x00000400         rw !x
 Linker script and memory map
 
 LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+LOAD ./Mcal/Mcal_DIO/Mcal_DIO_prog.o
+LOAD ./Hal/Hal_Led/Hal_Led_prog.o
 LOAD ./App/main.o
 LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
@@ -185,6 +187,8 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                 0x00000068                __vector_16
                 0x00000068                __vector_18
                 0x00000068                __vector_20
+ .text          0x0000006c        0x0 ./Mcal/Mcal_DIO/Mcal_DIO_prog.o
+ .text          0x0000006c        0x0 ./Hal/Hal_Led/Hal_Led_prog.o
  .text          0x0000006c        0x0 ./App/main.o
  .text          0x0000006c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
                 0x0000006c                . = ALIGN (0x2)
@@ -223,6 +227,8 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .data          0x00800060        0x0 ./Mcal/Mcal_DIO/Mcal_DIO_prog.o
+ .data          0x00800060        0x0 ./Hal/Hal_Led/Hal_Led_prog.o
  .data          0x00800060        0x0 ./App/main.o
  .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.data*)
@@ -237,6 +243,8 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                 0x00800060                PROVIDE (__bss_start, .)
  *(.bss)
  .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .bss           0x00800060        0x0 ./Mcal/Mcal_DIO/Mcal_DIO_prog.o
+ .bss           0x00800060        0x0 ./Hal/Hal_Led/Hal_Led_prog.o
  .bss           0x00800060        0x0 ./App/main.o
  .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.bss*)
@@ -268,13 +276,17 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .signature
  *(.signature*)
 
-.stab           0x00000000       0xfc
+.stab           0x00000000      0x5ac
  *(.stab)
- .stab          0x00000000       0xfc ./App/main.o
+ .stab          0x00000000      0x1a4 ./Mcal/Mcal_DIO/Mcal_DIO_prog.o
+ .stab          0x000001a4      0x1e0 ./Hal/Hal_Led/Hal_Led_prog.o
+                                0x1ec (size before relaxing)
+ .stab          0x00000384      0x228 ./App/main.o
+                                0x234 (size before relaxing)
 
-.stabstr        0x00000000      0x235
+.stabstr        0x00000000      0x7dc
  *(.stabstr)
- .stabstr       0x00000000      0x235 ./App/main.o
+ .stabstr       0x00000000      0x7dc ./Mcal/Mcal_DIO/Mcal_DIO_prog.o
 
 .stab.excl
  *(.stab.excl)
