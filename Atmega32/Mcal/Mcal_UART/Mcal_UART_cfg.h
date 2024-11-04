@@ -1,16 +1,15 @@
 /*
- * Mcal_dfs.h
+ * Mcal_UART_cfg.h
  *
- *  Created on: Oct 29, 2024
+ *  Created on: Nov 4, 2024
  *      Author: Ziad Fathy
  */
 
-#ifndef MCAL_MCAL_DFS_H_
-#define MCAL_MCAL_DFS_H_
+#ifndef MCAL_MCAL_UART_MCAL_UART_CFG_H_
+#define MCAL_MCAL_UART_MCAL_UART_CFG_H_
 
 /* -------------------- Include Start -------------------- */
-#include "Mcal_EX_Interrupt/Mcal_EX_Interrupt_init.h"
-#include "Mcal_UART/Mcal_UART_init.h"
+#include "Mcal_UART_priv.h"
 /* -------------------- Include End  -------------------- */
 
 /* -------------------- Macro Start -------------------- */
@@ -25,4 +24,4 @@
 /* -------------------- API Start -------------------- */
 /* -------------------- API End -------------------- */
 
-#endif /* MCAL_MCAL_DFS_H_ */
+#endif /* MCAL_MCAL_UART_MCAL_UART_CFG_H_ */

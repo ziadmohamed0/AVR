@@ -14,6 +14,9 @@
 #ifndef	LIB_STD_TYPES_H_
 #define LIB_STD_TYPES_H_
 
+/* ========== INCLUDES ========== */
+#include <util/delay.h>
+
 /* ========== CPU_TUPES ========== */
 #define CPU_8_BIT						8
 #define CPU_16_BIT						16
@@ -64,13 +67,13 @@ typedef double							float64_t;
 
 #elif   (CPU_type == CPU_8_BIT)
 
-typedef unsigned char					uint8_t;
-typedef unsigned short					uint16_t;
-typedef unsigned long					uint32_t;
-typedef signed long						sint32_t;
-typedef signed short					sint16_t;
-typedef signed char						sint8_t;
-typedef float							float32_t;
+typedef unsigned char					uint8;
+typedef unsigned short					uint16;
+typedef unsigned long					uint32;
+typedef signed long						sint32;
+typedef signed short					sint16;
+typedef signed char						sint8;
+typedef float							float32;
 
 #endif
 
