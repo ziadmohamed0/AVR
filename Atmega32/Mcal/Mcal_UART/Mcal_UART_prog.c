@@ -7,3 +7,18 @@
 
 
 #include "Mcal_UART_init.h"
+
+
+void MCAL_USART_init(void) {
+
+}
+
+void MCAL_USART_sendData(void) {
+
+}
+
+Std_Return MCAL_USART_recivedData(void) {
+	uint8 retValue = R_ERROR;
+
+	return retValue;
+}

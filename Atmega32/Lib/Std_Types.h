@@ -93,6 +93,7 @@ typedef	uint8_t				Std_Return;
 #define R_OK							(Std_Return)1
 #define R_ERROR							(Std_Return)0
 
+#define NULL							0
 
 #endif
 
