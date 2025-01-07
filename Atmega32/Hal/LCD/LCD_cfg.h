@@ -1,18 +1,33 @@
 /*
- * main.h
+ * LCD_cfg.h
  *
- *  Created on: Dec 6, 2024
+ *  Created on: Jan 7, 2025
  *      Author: s
  */
 
-#ifndef APP_MAIN_H_
-#define APP_MAIN_H_
+#ifndef HAL_LCD_LCD_CFG_H_
+#define HAL_LCD_LCD_CFG_H_
 
 /* -------------------- Include Start -------------------- */
-#include "../Hal/Hal_dfs.h"
+#include "LCD_init.h"
 /* -------------------- Include End  -------------------- */
 
 /* -------------------- Macro Start -------------------- */
+/**********MODE************/
+#define LCD_8_BIT_MODE  	0
+#define LCD_4_BIT_MODE    	1
+#define LCD_MODE  			LCD_4_BIT_MODE
+
+/******data pin*******/
+#define LCD_PORT    		Port_A
+
+/******control pin*********/
+#define RS      			Pin_0
+#define E       			Pin_1
+#define D0       			Pin_2
+#define D1       			Pin_3
+#define D2       			Pin_4
+#define D3       			Pin_5
 /* -------------------- Macro End  -------------------- */
 
 /* -------------------- Functions Macro Start -------------------- */
@@ -24,5 +39,4 @@
 /* -------------------- API Start -------------------- */
 /* -------------------- API End -------------------- */
 
-
-#endif /* APP_MAIN_H_ */
+#endif /* HAL_LCD_LCD_CFG_H_ */

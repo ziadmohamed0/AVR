@@ -1,28 +1,19 @@
 /*
  * Mcal_dfs.h
  *
- *  Created on: Oct 29, 2024
- *      Author: Ziad Fathy
+ *  Created on: Dec 6, 2024
+ *      Author: s
  */
 
 #ifndef MCAL_MCAL_DFS_H_
 #define MCAL_MCAL_DFS_H_
 
-/* -------------------- Include Start -------------------- */
-#include "Mcal_EX_Interrupt/Mcal_EX_Interrupt_init.h"
-#include "Mcal_UART/Mcal_UART_init.h"
-/* -------------------- Include End  -------------------- */
-
-/* -------------------- Macro Start -------------------- */
-/* -------------------- Macro End  -------------------- */
-
-/* -------------------- Functions Macro Start -------------------- */
-/* -------------------- Functions Macro End -------------------- */
-
-/* -------------------- Standard Types Start -------------------- */
-/* -------------------- Standard Types End -------------------- */
-
-/* -------------------- API Start -------------------- */
-/* -------------------- API End -------------------- */
+#include "GPIO/GPIO_init.h"
+#include "Interrupt/Interrupt_external_init.h"
+#include "USART/USART_init.h"
+#include  "Timer0/Timer0_init.h"
+#include "Timer1/Timer1_init.h"
+#include "Timer2/Timer2_init.h"
+#include "ADC/ADC_init.h"
 
 #endif /* MCAL_MCAL_DFS_H_ */

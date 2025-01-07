@@ -1,15 +1,16 @@
 /*
- * main.h
+ * KEYPAD_init.h
  *
- *  Created on: Dec 6, 2024
+ *  Created on: Jan 7, 2025
  *      Author: s
  */
 
-#ifndef APP_MAIN_H_
-#define APP_MAIN_H_
+#ifndef HAL_KEYPAD_KEYPAD_INIT_H_
+#define HAL_KEYPAD_KEYPAD_INIT_H_
 
 /* -------------------- Include Start -------------------- */
-#include "../Hal/Hal_dfs.h"
+#include "../../Mcal/Mcal_dfs.h"
+#include "KEYPAD_cfg.h"
 /* -------------------- Include End  -------------------- */
 
 /* -------------------- Macro Start -------------------- */
@@ -22,7 +23,8 @@
 /* -------------------- Standard Types End -------------------- */
 
 /* -------------------- API Start -------------------- */
+void keypad_vidInit();
+uint8 keypad_u8Stat(uint8 *ptr);
 /* -------------------- API End -------------------- */
 
-
-#endif /* APP_MAIN_H_ */
+#endif /* HAL_KEYPAD_KEYPAD_INIT_H_ */

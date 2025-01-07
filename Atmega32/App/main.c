@@ -1,15 +1,16 @@
 /*
  * main.c
  *
- *  Created on: 28/10/2024
- *      Author: Ziad Mohammed
+ *  Created on: Dec 6, 2024
+ *      Author: s
  */
+
 #include "main.h"
 
-int main(void) {
-	while (1) {
+int main (void) {
+
+	while(1) {
 
 	}
 	return 0;
 }
-

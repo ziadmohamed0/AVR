@@ -1,15 +1,15 @@
 /*
- * main.h
+ * Interrupt_cfg.h
  *
  *  Created on: Dec 6, 2024
  *      Author: s
  */
 
-#ifndef APP_MAIN_H_
-#define APP_MAIN_H_
+#ifndef MCAL_INTERRUPT_INTERRUPT_EXTERNAL_CFG_H_
+#define MCAL_INTERRUPT_INTERRUPT_EXTERNAL_CFG_H_
 
 /* -------------------- Include Start -------------------- */
-#include "../Hal/Hal_dfs.h"
+#include "Interrupt_reg.h"
 /* -------------------- Include End  -------------------- */
 
 /* -------------------- Macro Start -------------------- */
@@ -19,10 +19,15 @@
 /* -------------------- Functions Macro End -------------------- */
 
 /* -------------------- Standard Types Start -------------------- */
+typedef enum {
+	EX_Low_Level,
+	EX_Any_Logical,
+	EX_Falling_Edge,
+	EX_Rising_Edge
+}EX_Sense_Control;
 /* -------------------- Standard Types End -------------------- */
 
 /* -------------------- API Start -------------------- */
 /* -------------------- API End -------------------- */
 
-
-#endif /* APP_MAIN_H_ */
+#endif /* MCAL_INTERRUPT_INTERRUPT_EXTERNAL_CFG_H_ */

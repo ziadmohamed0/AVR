@@ -1,18 +1,22 @@
 /*
- * main.h
+ * KEYPAD_cfg.h
  *
- *  Created on: Dec 6, 2024
+ *  Created on: Jan 7, 2025
  *      Author: s
  */
 
-#ifndef APP_MAIN_H_
-#define APP_MAIN_H_
+#ifndef HAL_KEYPAD_KEYPAD_CFG_H_
+#define HAL_KEYPAD_KEYPAD_CFG_H_
 
 /* -------------------- Include Start -------------------- */
-#include "../Hal/Hal_dfs.h"
+#include "KEYPAD_init.h"
 /* -------------------- Include End  -------------------- */
 
 /* -------------------- Macro Start -------------------- */
+#define NO_ROW    		(uint8)4
+#define NO_COL    		(uint8)4
+
+#define KEYPAD_Port		Port_B
 /* -------------------- Macro End  -------------------- */
 
 /* -------------------- Functions Macro Start -------------------- */
@@ -24,5 +28,4 @@
 /* -------------------- API Start -------------------- */
 /* -------------------- API End -------------------- */
 
-
-#endif /* APP_MAIN_H_ */
+#endif /* HAL_KEYPAD_KEYPAD_CFG_H_ */

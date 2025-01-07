@@ -13,8 +13,6 @@
 
 #ifndef	LIB_STD_TYPES_H_
 #define LIB_STD_TYPES_H_
-
-/* ========== INCLUDES ========== */
 #include <util/delay.h>
 
 /* ========== CPU_TUPES ========== */
@@ -78,7 +76,7 @@ typedef float							float32;
 #endif
 
 /* ========== Std_Return ========== */
-typedef	uint8_t				Std_Return;
+typedef	uint8				Std_Return;
 
 /* ========== Std_Status ========== */
 #define On								1
@@ -93,7 +91,6 @@ typedef	uint8_t				Std_Return;
 #define R_OK							(Std_Return)1
 #define R_ERROR							(Std_Return)0
 
-#define NULL							0
 
 #endif
 
